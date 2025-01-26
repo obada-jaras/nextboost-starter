@@ -2,6 +2,8 @@
   "Sample": {
     "greeting": "Hello, World!",
     "switchToDark": "Switch to Dark Mode",
-    "switchToLight": "Switch to Light Mode"
+    "switchToLight": "Switch to Light Mode",
+    "switchToArabic": "Arabic",
+    "switchToEnglish": "English"
   }
 }

@@ -2,6 +2,8 @@
   "Sample": {
     "greeting": "مرحبا بالعالم!",
     "switchToDark": "تبديل إلى الوضع الداكن",
-    "switchToLight": "تبديل إلى الوضع الفاتح"
+    "switchToLight": "تبديل إلى الوضع الفاتح",
+    "switchToArabic": "العربية",
+    "switchToEnglish": "الإنجليزية"
   }
 }
