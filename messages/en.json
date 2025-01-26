@@ -1,5 +1,7 @@
 {
   "Sample": {
-    "greeting": "Hello, World!"
+    "greeting": "Hello, World!",
+    "switchToDark": "Switch to Dark Mode",
+    "switchToLight": "Switch to Light Mode"
   }
 }
