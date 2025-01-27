@@ -4,10 +4,14 @@ import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { setUserLocale } from "@/services/locale";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/api";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
   const t = useTranslations("Sample");
+
+  const tasks = useQuery(api.tasks.get);
 
   const switchToArabic = async () => {
     await setUserLocale("ar");
@@ -55,6 +59,9 @@ export default function Home() {
           <UserButton />
         </SignedIn>
       </div>
+
+      {/* Tasks */}
+      <div className="mt-10">{tasks?.map(({ _id, text }) => <div key={_id}>{text}</div>)}</div>
     </div>
   );
 }

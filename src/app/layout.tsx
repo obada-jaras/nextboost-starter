@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ClerkProvider } from "@clerk/nextjs";
 import { getClerkLocalization, Locale } from "@/i18n/config";
+import { ConvexClientProvider } from "@/components/site/convex-client-provider";
 import { ThemeProvider } from "@/components/site/theme-provider";
 
 import "./globals.css";
@@ -43,7 +44,9 @@ export default async function RootLayout({
             defaultTheme="system"
             enableSystem
           >
-            <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+            <NextIntlClientProvider messages={messages}>
+              <ConvexClientProvider>{children}</ConvexClientProvider>
+            </NextIntlClientProvider>
           </ThemeProvider>
         </body>
       </html>
