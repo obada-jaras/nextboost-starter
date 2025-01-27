@@ -3,7 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { ClerkProvider } from "@clerk/nextjs";
+import { getClerkLocalization, Locale } from "@/i18n/config";
 import { ThemeProvider } from "@/components/site/theme-provider";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,19 +30,23 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const localization = getClerkLocalization(locale as Locale);
+
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="system"
-          enableSystem
-        >
-          <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider localization={localization}>
+      <html lang={locale}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
+          <ThemeProvider
+            attribute="data-theme"
+            defaultTheme="system"
+            enableSystem
+          >
+            <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
