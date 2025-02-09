@@ -1,12 +1,13 @@
 {
-  "name": "client-portal-next",
+  "name": "nextboost-starter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev-turbo": "next dev --turbopack",
+    "dev --turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "preview": "next build && next start",
     "lint": "next lint",
     "format": "prettier --write .",
     "format-check": "prettier --check ."
