@@ -6,6 +6,7 @@ import { setUserLocale } from "@/services/locale";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/api";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -22,32 +23,19 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-[var(--color-background)] text-[var(--color-foreground)]">
+    <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-background text-foreground transition-colors duration-200">
       {/* Greeting */}
       <h1 className="text-3xl font-bold mb-4">{t("greeting")}</h1>
 
       {/* Theme Toggle */}
-      <button
-        className="px-4 py-2 rounded bg-foreground text-background transition hover:bg-opacity-80 dark:hover:bg-opacity-70"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      >
+      <Button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
         {theme === "light" ? t("switchToDark") : t("switchToLight")}
-      </button>
+      </Button>
 
       {/* Language Toggle */}
       <div className="mt-5 flex gap-4">
-        <button
-          className="px-4 py-2 rounded bg-foreground text-background transition hover:bg-opacity-80 dark:hover:bg-opacity-70"
-          onClick={switchToArabic}
-        >
-          {t("switchToArabic")}
-        </button>
-        <button
-          className="px-4 py-2 rounded bg-foreground text-background transition hover:bg-opacity-80 dark:hover:bg-opacity-70"
-          onClick={switchToEnglish}
-        >
-          {t("switchToEnglish")}
-        </button>
+        <Button onClick={switchToArabic}>{t("switchToArabic")}</Button>
+        <Button onClick={switchToEnglish}>{t("switchToEnglish")}</Button>
       </div>
 
       {/* Clerk Integration */}
@@ -61,7 +49,16 @@ export default function Home() {
       </div>
 
       {/* Tasks/ Convex DB */}
-      <div className="mt-10">{tasks?.map(({ _id, text }) => <div key={_id}>{text}</div>)}</div>
+      <div className="mt-10 space-y-2">
+        {tasks?.map(({ _id, text }) => (
+          <div
+            key={_id}
+            className="p-2 border rounded-md bg-card text-card-foreground"
+          >
+            {text}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
