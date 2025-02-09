@@ -60,7 +60,7 @@ export default function Home() {
         </SignedIn>
       </div>
 
-      {/* Tasks */}
+      {/* Tasks/ Convex DB */}
       <div className="mt-10">{tasks?.map(({ _id, text }) => <div key={_id}>{text}</div>)}</div>
     </div>
   );
