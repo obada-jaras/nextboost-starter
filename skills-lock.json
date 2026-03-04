@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "skills": {
+    "clerk": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "c572ed569adffe980406a99754c5614a867126f12bb96c66fedf3e7478e10daf"
+    },
+    "clerk-backend-api": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "4f51a8aac3bb33c5dd6ec06740e13db9c45ad40bb372c918155ea8076f80367b"
+    },
+    "clerk-custom-ui": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "974f431c27988975ce6088e2561eac9bfc164a7e98ca4e739399c6fd47134529"
+    },
+    "clerk-nextjs-patterns": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "0e53a074a76337ac7c46a51ea3544829b8ebdbb9c5962103df2d077ef40e8e65"
+    },
+    "clerk-orgs": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "9152a999b84ee07ffd5fdbc6e314a8e2504c5506beb5b69fdd4aebe098e9c8f4"
+    },
+    "clerk-setup": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "2fe996ababc80c5e16c817fc2ec1ef7f04ad480d675a4262ffe617fe2f661878"
+    },
+    "clerk-swift": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "62354bee7cf16f8484ef5f54b22ebe19ee99b074382b846cda1258f3cddb9606"
+    },
+    "clerk-testing": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "433b71e22d840af4995a17861f9467460979d61c27f4c5417ee657f85dc83186"
+    },
+    "clerk-webhooks": {
+      "source": "clerk/skills",
+      "sourceType": "github",
+      "computedHash": "6a13eea450dda0b57edc358970f53c55ad7a2eb237d31decbc38e312555ddac5"
+    },
+    "code-polish": {
+      "source": "paulrberg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "bf5cfe9542447d77690af23938c0d13e41688a7905486d72198fd046e43dcf25"
+    },
+    "code-review": {
+      "source": "paulrberg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "942c3fdf4ea6665e5677a66291a0a5652b4680e0566776f6ec2a5ab2d54001de"
+    },
+    "code-simplify": {
+      "source": "paulrberg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "21916814b819a8d1cdf52020e1a035110966b80d1dd102ee77a9058b19738323"
+    },
+    "convex": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "de7a20d081cd19bf8bce4038bd62d038a0a88f218f85afb35320d09b052fb534"
+    },
+    "convex-agents": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "3054123dedc1b7ded9b6404c6c641023683fe509103fe7dc148acda831d53d36"
+    },
+    "convex-best-practices": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "3b24d2afbb5859e3a3640c1e47e2ac9ace81e9737ec76b891951999361c92ab1"
+    },
+    "convex-component-authoring": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "dbb84d8c1996d9054958f07e67502ece523c49ff957bb3109397a6595e44f4ed"
+    },
+    "convex-cron-jobs": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "e786347f192c02a97e703b41cb2d8727346092b7112a1c86da9fbe982247962e"
+    },
+    "convex-file-storage": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "a541556841d1a907059f73ef4a428a4655b3355baf160e5c0aca1cac86054c0b"
+    },
+    "convex-functions": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "a08fd9695ad0558ec12a312136d6a1483df04fcb5548207a99ce7d14c0df251a"
+    },
+    "convex-http-actions": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "c189703dd5d91f280b53d6bd903bf8313e935b1edab136bb7ffdb6c1512b95aa"
+    },
+    "convex-migrations": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "869a862d35e7fb024d244830b0968e231f8ff99fefa0f879270e13e14c4934fe"
+    },
+    "convex-realtime": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "aa08a2856778c09aa8c0f5eef431fc102115e04461d7d3f86e6ce97b5848b52f"
+    },
+    "convex-schema-validator": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "97b7965f2bc665f1848196813c79e32bff2d8b58b3a701b313c4a96f0bf5ac95"
+    },
+    "convex-security-audit": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "a1468190e59af7e8a8352dd6d3707f0b5a19659e3f4503042c6be0a91cbb3916"
+    },
+    "convex-security-check": {
+      "source": "waynesutton/convexskills",
+      "sourceType": "github",
+      "computedHash": "b53e061304bb81d037c6dd4e38762d27a596523bcbeab43c58e0b05140449802"
+    },
+    "js-ts-business-crud-transforms": {
+      "source": "icyJoseph/agent-skills",
+      "sourceType": "github",
+      "computedHash": "785ce46589abff14ed0e9b529eb14f0a42d5b9816ae75f3efafc65f99aeb8af6"
+    },
+    "js-ts-performance-readability": {
+      "source": "icyJoseph/agent-skills",
+      "sourceType": "github",
+      "computedHash": "1deacf6936509a097c81ac234bf4f0b202301a09fcd8bd60d2ab5ef1679bbd9b"
+    },
+    "md-docs": {
+      "source": "paulrberg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "86fbde0a0515fb5889df97f2eda93d86566794d311991768d5bb5bc558295efa"
+    },
+    "next-best-practices": {
+      "source": "vercel-labs/next-skills",
+      "sourceType": "github",
+      "computedHash": "515ba75178bd44875812d9a560bdf14651f86709f89cf1d4f209638e879807f3"
+    },
+    "next-cache-components": {
+      "source": "vercel-labs/next-skills",
+      "sourceType": "github",
+      "computedHash": "a94b83ddcd2ff1c30722577f693b1bfe32f2e1a83abdd6c08c2d6cc6753b53c8"
+    },
+    "next-intl-add-language": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "6b30075c5f43a4498782729f129c513ca28db37d93032a81a07e444d4db575c5"
+    },
+    "next-upgrade": {
+      "source": "vercel-labs/next-skills",
+      "sourceType": "github",
+      "computedHash": "be6bbf6ab1dc2cc6f2505cea52d497920c04f5b532c0846ee201f6029b803fb0"
+    },
+    "preline-theme-generator": {
+      "source": "htmlstreamofficial/preline",
+      "sourceType": "github",
+      "computedHash": "945262531988cff7cbdf74ccf341bdc6320988b435213f1fdf0318a4ef2016a7"
+    },
+    "shadcn-ui": {
+      "source": "openclaw/skills",
+      "sourceType": "github",
+      "computedHash": "4e00cfddeecd52c00012bfed5f3bc7c6d47f9c0ebbba57bedd264c427b25f938"
+    },
+    "tailwind-4-docs": {
+      "source": "lombiq/tailwind-agent-skills",
+      "sourceType": "github",
+      "computedHash": "883754f860c9b4115ae7bf14b5dabb469a297c74b8a308a2d870d9c90af1ac00"
+    },
+    "tailwind-css": {
+      "source": "paulrberg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "35a415a9ec0d8347bc3724921ea94ac21a3e9c50ccd3e4324452a1fcb8410136"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a"
+    }
+  }
+}
