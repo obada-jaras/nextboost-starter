@@ -3,10 +3,12 @@
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { setUserLocale } from "@/services/locale";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/api";
 import { Button } from "@/components/ui/button";
+
+type TaskItem = { _id: string; text: string };
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -40,22 +42,25 @@ export default function Home() {
 
       {/* Clerk Integration */}
       <div className="mt-10 flex flex-col items-center gap-4">
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
+        <Show when="signed-out">
+          <div className="flex gap-3">
+            <SignInButton />
+            <SignUpButton />
+          </div>
+        </Show>
+        <Show when="signed-in">
           <UserButton />
-        </SignedIn>
+        </Show>
       </div>
 
       {/* Tasks/ Convex DB */}
       <div className="mt-10 space-y-2">
-        {tasks?.map(({ _id, text }) => (
+        {tasks?.map((task: TaskItem) => (
           <div
-            key={_id}
+            key={task._id}
             className="p-2 border rounded-md bg-card text-card-foreground"
           >
-            {text}
+            {task.text}
           </div>
         ))}
       </div>

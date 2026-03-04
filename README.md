@@ -87,6 +87,8 @@ bun run dev
 bun run dev --turbo
 ```
 
+**Convex:** To connect to Convex and regenerate `convex/_generated` (api, server types), run `npx convex dev` in a separate terminal and follow the prompts. The app can build without it using the committed generated stubs.
+
 ### **4️⃣ Build and Run in Production**
 
 ```sh
